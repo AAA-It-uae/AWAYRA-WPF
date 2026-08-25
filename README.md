@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="docs/awayra-header.svg" alt="Awayra animated hero" width="100%" />
+
+<br />
+
 # Awayra
 
 ### A calm, privacy-first break reminder for Windows
@@ -24,31 +28,22 @@
 
 Awayra is a free and open-source Windows application for people who spend long periods working at a computer.
 
-It runs quietly in the background and reminds you to:
-
-- rest your eyes
-- look away from the screen
-- blink naturally
-- stand up
-- move and stretch
-- avoid long uninterrupted periods of sitting
+It runs quietly in the background and reminds you to rest your eyes, look away from the screen, blink naturally, stand up, move, stretch, and avoid long uninterrupted periods of sitting.
 
 Awayra is deliberately local-first. It does not require an account, does not depend on a cloud service, and does not send usage telemetry.
 
-The application provides two independent reminder systems:
-
 | Reminder | Default interval | Default duration | Purpose |
 |---|---:|---:|---|
-| **Eye Reset** | 20 minutes | 20 seconds | Short visual reset with distance focus and counted blinking |
+| **Eye Reset** | 20 minutes | 20 seconds | Distance focus, natural blinking and a short visual reset |
 | **Move Break** | 45 minutes | 60 seconds | Stand, move, stretch and briefly leave the desk |
 
-Both schedules can be customized independently.
+Both reminder engines are independent and can be configured separately.
 
 ---
 
 # Product tour
 
-The screenshots below show the current Awayra desktop experience.
+The screenshots below are not decorative mockups. They show the current Awayra desktop interface and the controls users actually interact with.
 
 ## 1. System tray
 
@@ -56,45 +51,65 @@ The screenshots below show the current Awayra desktop experience.
   <img src="docs/screenshots/awayra-system-tray.png" alt="Awayra system tray icon" />
 </p>
 
-Awayra is designed to remain available without occupying the taskbar during normal use.
+Awayra is built to live in the Windows notification area instead of occupying the taskbar all day.
 
-The system tray integration provides persistent background access while keeping the main dashboard out of the way. Depending on your Windows configuration, Awayra can start minimized and continue running from the notification area until a reminder is due.
+The tray mode keeps the reminder engines running while the dashboard is closed. This is the normal background state for users who want the app available without another permanent window on the desktop.
 
-Key behavior:
+**What this part of Awayra does:**
 
-- runs quietly in the Windows notification area
-- keeps reminder timers active while the dashboard is closed
+- keeps Eye Reset and Move Break timers active in the background
+- lets the dashboard be closed without stopping the reminder service
 - supports launching with Windows
 - supports starting minimized
-- supports closing the dashboard back to the tray instead of exiting the application
+- supports closing the dashboard back to the tray
+- keeps the app available until the user explicitly exits it
 
 ---
 
 ## 2. Main dashboard
 
 <p align="center">
-  <img src="docs/screenshots/awayra-dashboard.png" alt="Awayra main dashboard" width="680" />
+  <img src="docs/screenshots/awayra-dashboard.png" alt="Awayra main dashboard" width="675" />
 </p>
 
-The dashboard gives a direct view of both reminder systems without requiring configuration screens.
+The dashboard is the operational overview of Awayra. It shows the state of both reminder engines, today's activity and the controls that matter during normal use.
 
-Each reminder card shows its current state and countdown. Eye Reset and Move Break can be enabled, disabled or muted independently. You can also trigger either break immediately when you want to step away before the scheduled timer expires.
+### Eye Reset card
 
-The dashboard also displays daily activity statistics, including completed eye resets, movement breaks, skipped reminders and snoozed reminders.
+| Control | What it does |
+|---|---|
+| **Countdown** | Shows how long remains before the next Eye Reset |
+| **Reminder** | Enables or disables the Eye Reset reminder engine |
+| **Sound** | Enables or disables the scheduled Eye Reset sound |
+| **Eye Reset Now** | Starts an Eye Reset immediately without waiting for the timer |
 
-Main dashboard controls include:
+### Move Break card
 
-- live countdown for Eye Reset
-- live countdown for Move Break
-- independent reminder on/off controls
-- independent sound controls
-- **Eye Reset Now** manual trigger
-- **Move Break Now** manual trigger
-- pause/resume control
-- direct access to Settings
-- daily reminder statistics
+| Control | What it does |
+|---|---|
+| **Countdown** | Shows how long remains before the next Move Break |
+| **Reminder** | Enables or disables the Move Break reminder engine |
+| **Sound** | Enables or disables the scheduled Move Break sound |
+| **Move Break Now** | Starts a Move Break immediately without waiting for the timer |
 
-The goal is to keep the primary state of the application visible in one compact window.
+### Today's statistics
+
+The dashboard records local daily counts for:
+
+- completed Eye Resets
+- completed Move Breaks
+- skipped reminders
+- snoozed reminders
+
+### Dashboard actions
+
+| Button | What it does |
+|---|---|
+| **Pause / Resume** | Temporarily pauses or resumes reminder scheduling |
+| **Settings** | Opens the complete configuration window |
+| **About & Support Awayra** | Provides project/support context directly from the dashboard |
+
+The dashboard is intentionally compact: current state first, configuration second.
 
 ---
 
@@ -104,71 +119,102 @@ The goal is to keep the primary state of the application visible in one compact 
   <img src="docs/screenshots/awayra-settings.png" alt="Awayra settings window" width="1100" />
 </p>
 
-The Settings window groups the main behavior into four practical areas: sound and exercise, reminder timing, schedule behavior, and Windows/appearance options.
+Settings is where Awayra's behavior is defined. The window is divided into four areas: **Break sound and exercise**, **Reminder timers**, **Behavior and schedule**, and **Appearance and Windows**.
+
+The reference below explains every visible setting in the screenshot.
 
 ### Break sound and exercise
 
-Awayra includes six locally generated reminder sounds:
+Awayra ships with six locally generated sound themes. No sound file is fetched from the internet at runtime.
 
-| Sound | Character |
+| Setting | What it controls |
 |---|---|
-| Soft bell | Short, gentle alert |
-| Gentle chime | Light notification tone |
-| Calm drop | Minimal soft tone |
-| Calm piano | Short piano phrase |
-| Morning dew | Gentle rising melody |
-| Still water | Slower, deeper calming melody |
+| **Soft bell** | Selects the short soft-bell reminder sound |
+| **Gentle chime** | Selects a light chime-style reminder |
+| **Calm drop** | Selects a short minimal tone |
+| **Calm piano** | Selects a calm piano phrase |
+| **Morning dew** | Selects a gentle melody that fades in from silence |
+| **Still water** | Selects a slower calm melody that fades in from silence |
+| **Volume** | Sets reminder playback volume from 0% to 100% |
+| **Repeat** | Sets the number of seconds between repeated sound playback while the break is active |
+| **Preview sound** | Plays the selected sound immediately so it can be checked before saving |
+| **Show the guided exercise animation** | Enables the animated guidance used during Eye Reset and Move Break |
 
-You can configure:
-
-- reminder sound
-- volume
-- repeat interval
-- sound preview
-- guided exercise animation
-
-No sound asset needs to be downloaded at runtime.
+When guided animation is switched off, the break can fall back to a simpler countdown. **Reduced motion** keeps guidance available while removing the movement itself.
 
 ### Reminder timers
 
-Eye Reset and Move Break are configured independently.
+Eye Reset and Move Break have separate schedules. Changing one does not silently modify the other.
 
-For each reminder you can control:
+#### Eye Reset
 
-- reminder enabled/disabled state
-- sound enabled/disabled state
-- interval
-- break duration
+| Setting | What it controls |
+|---|---|
+| **Enable reminder** | Turns scheduled Eye Reset reminders on or off |
+| **Play sound** | Controls whether scheduled Eye Resets play the selected break sound |
+| **Interval** | Number of minutes between Eye Reset reminders. The standard configuration shown is **20 min** |
+| **Duration** | Length of the Eye Reset overlay. The standard configuration shown is **20 sec** |
 
-This allows Awayra to support anything from frequent micro-breaks to longer movement intervals.
+#### Move Break
+
+| Setting | What it controls |
+|---|---|
+| **Enable reminder** | Turns scheduled Move Break reminders on or off |
+| **Play sound** | Controls whether scheduled Move Breaks play the selected break sound |
+| **Interval** | Number of minutes between Move Break reminders. The standard configuration shown is **45 min** |
+| **Duration** | Length of the Move Break overlay. The standard configuration shown is **60 sec** |
+
+The **Sound on/off** control inside a running fullscreen overlay applies only to that active break. It does not rewrite the saved scheduled-sound preference.
 
 ### Behavior and schedule
 
-Awayra can be adapted to different work patterns with:
+#### Reminder actions
 
-- optional Skip action
-- optional Snooze action
-- configurable snooze duration
-- idle reset behavior
-- configurable idle threshold
-- optional work-hours restriction
-- configurable start and end of the workday
+| Setting | What it controls |
+|---|---|
+| **Allow skip** | Shows or hides the Skip action on break overlays |
+| **Allow snooze** | Shows or hides the Snooze action on break overlays |
+| **Snooze** | Defines how many minutes a snoozed reminder is postponed. The screenshot shows **5 min** |
+| **Reset after idle** | Lets Awayra treat genuine computer idle time as a break and reset reminder timing after the configured threshold |
+| **Idle after** | Defines how long the computer must be idle before that reset behavior applies. The screenshot shows **10 min** |
 
-When work hours are enabled, scheduled reminders can wait until the active work window resumes instead of appearing at inappropriate times.
+Idle reset exists to prevent a pointless reminder from appearing immediately after you have already been away from the computer.
 
-### Appearance and Windows behavior
+#### Work hours
 
-The break overlay can be adjusted from more solid to more transparent presentation.
+| Setting | What it controls |
+|---|---|
+| **Enable work hours** | Restricts scheduled reminders to a defined daily time window |
+| **Start** | Beginning of the active reminder window. The screenshot contains **09:00** |
+| **End** | End of the active reminder window. The screenshot contains **18:00** |
 
-Additional options include:
+When work hours are enabled, reminders that would otherwise occur outside the configured window wait until work hours resume.
 
-- overlay appearance
-- Reduced Motion
-- run at Windows startup
-- start minimized
-- close dashboard to tray
+### Appearance and Windows
 
-Reduced Motion keeps the break guidance available without relying on animated movement.
+#### Overlay appearance
+
+| Setting | What it controls |
+|---|---|
+| **Overlay appearance slider** | Changes the visual strength/clarity of the fullscreen break overlay between the solid and clearer presentation modes |
+| **Reduced motion** | Keeps break guidance while suppressing animated movement for users who prefer a quieter visual experience |
+
+A solid overlay can also be used when you do not want the temporary blurred-background capture described in the Privacy section.
+
+#### Windows behavior
+
+| Setting | What it controls |
+|---|---|
+| **Run at Windows startup** | Starts Awayra automatically when the user signs in to Windows |
+| **Start minimized** | Starts Awayra without opening the dashboard as the primary foreground window |
+| **Close dashboard to tray** | Makes the dashboard close back into the notification area instead of terminating Awayra |
+
+### Save and Close
+
+| Button | What it does |
+|---|---|
+| **Save** | Validates and persists the current settings |
+| **Close** | Closes the Settings window |
 
 ---
 
@@ -178,18 +224,22 @@ Reduced Motion keeps the break guidance available without relying on animated mo
   <img src="docs/screenshots/awayra-move-break.png" alt="Awayra Move Break overlay" width="620" />
 </p>
 
-Move Break is intended to interrupt long periods of continuous sitting.
+Move Break interrupts long periods of continuous sitting with a focused fullscreen routine.
 
-The overlay presents a short guided movement sequence with a large countdown and a simple instruction for the current stage. The break can encourage actions such as standing up, walking briefly, resetting posture, moving the shoulders and stretching away from the desk.
+The overlay deliberately contains very little interface. The point is to stop working for a moment, not to manage another application.
 
-During a Move Break you can:
+| Element | What it does |
+|---|---|
+| **Guided movement illustration** | Demonstrates the current movement/posture step when guided animation is enabled |
+| **Current instruction** | Names the active step, such as returning to the desk or resetting posture |
+| **Large circular countdown** | Shows how many seconds remain in the break |
+| **Supporting instruction** | Gives a short plain-language movement cue |
+| **Sound on / off** | Mutes or restores sound for the currently running break only |
+| **Skip** | Ends the current reminder as skipped when Skip is allowed in Settings |
+| **Snooze** | Postpones the reminder by the configured snooze duration when Snooze is allowed |
+| **Complete** | Marks the current Move Break as completed and closes the overlay |
 
-- keep reminder sound on or mute the current break
-- skip the break when Skip is enabled
-- snooze the break when Snooze is enabled
-- mark the break complete
-
-The interaction remains intentionally limited so the break screen does not become another task-management interface.
+A Move Break can guide the user to stand, walk briefly, reset posture, move the shoulders, stretch the upper body, or simply leave the working position for a moment.
 
 ---
 
@@ -199,54 +249,54 @@ The interaction remains intentionally limited so the break screen does not becom
   <img src="docs/screenshots/awayra-eye-reset.png" alt="Awayra Eye Reset overlay" width="620" />
 </p>
 
-Eye Reset provides a short visual interruption to prolonged close-up screen focus.
+Eye Reset is a short interruption to prolonged close-up screen focus. The standard Awayra schedule uses a 20-second Eye Reset every 20 minutes.
 
-The default experience is inspired by the commonly used 20-20-20 screen-break habit. Awayra's default configuration schedules a 20-second Eye Reset every 20 minutes.
+| Element | What it does |
+|---|---|
+| **Eye guidance graphic** | Provides a visual focus point for the guided exercise |
+| **Look far away** | Reminds the user to stop focusing at monitor distance |
+| **Blink counter** | Tracks the guided blink sequence. The default exercise counts **10 blinks** |
+| **Large circular countdown** | Shows the seconds remaining in the Eye Reset |
+| **Distance-focus instruction** | Prompts the user to look at a distant object for a few breaths |
+| **Relaxation instruction** | Reminds the user to blink naturally and relax the face |
+| **Sound on / off** | Mutes or restores sound for the currently running Eye Reset only |
+| **Skip** | Ends the reminder as skipped when Skip is enabled |
+| **Snooze** | Postpones the reminder by the configured snooze duration when Snooze is enabled |
+| **Complete** | Marks the Eye Reset as completed and closes the overlay |
 
-The guided screen encourages you to look away, focus farther into the distance, relax your face and blink naturally. The default guided sequence counts ten blinks during the break.
-
-The overlay provides:
-
-- a large remaining-time indicator
-- visual eye guidance
-- blink counter
-- simple distance-focus instructions
-- current-break sound control
-- optional Skip
-- optional Snooze
-- manual Complete action
-
-Guided animation can be disabled entirely, and Reduced Motion is available for users who prefer static guidance.
+Guided animation can be disabled, and Reduced Motion provides a less animated version of the experience.
 
 ---
 
 # Core features
 
-## Independent reminder engines
+## Two independent reminder engines
 
-Eye Reset and Move Break maintain their own interval, duration, enabled state and sound preference.
-
-You can use either reminder independently or run both together.
+Eye Reset and Move Break each maintain their own interval, duration, enabled state and sound preference. Use either one independently or run both together.
 
 ## Manual breaks
 
-You do not need to wait for a timer. Both break types can be started directly from the dashboard.
+Both break types can be started directly from the dashboard. You do not need to wait for a scheduled timer.
 
 ## Daily statistics
 
-Awayra records local daily counts for completed Eye Resets, completed Move Breaks, skipped reminders and snoozed reminders.
+Awayra stores local daily counts for completed Eye Resets, completed Move Breaks, skipped reminders and snoozed reminders.
 
 ## Idle-aware scheduling
 
-Awayra can reset reminder timing after the computer has been idle for a configured period. This prevents a reminder from appearing immediately after you return from a genuine break away from the computer.
+Awayra can reset reminder timing after the computer has genuinely been idle for a configured period. This avoids firing a reminder immediately after the user has already taken a real break away from the device.
 
-## Work hours
+## Optional work hours
 
-Optional work hours let you restrict scheduled reminders to a defined time window.
+Scheduled reminders can be restricted to a defined daily window.
+
+## Guided and reduced-motion experiences
+
+Guided exercise animation can be enabled for a more visual break routine, disabled for a plain countdown, or combined with Reduced Motion for static guidance.
 
 ## Multi-monitor and Windows lifecycle support
 
-Awayra is designed for normal desktop conditions including:
+Awayra is designed for normal Windows desktop conditions including:
 
 - Windows 10 and Windows 11
 - multiple displays
@@ -258,9 +308,9 @@ Awayra is designed for normal desktop conditions including:
 - Windows startup
 - system tray operation
 
-## Calm notification sounds
+## Calm local sounds
 
-The included sounds are stored locally and are designed to function as gentle reminders rather than alarm-style interruptions.
+All included reminder sounds are generated/stored locally and are designed to act as gentle prompts rather than alarm-style interruptions.
 
 ---
 
@@ -287,7 +337,7 @@ Settings, statistics and logs remain under:
 
 ## Break-overlay background capture
 
-When a break overlay uses the blurred/frosted background effect, Awayra can temporarily capture the display underneath the overlay so it can be blurred locally.
+When a break uses the blurred/frosted background effect, Awayra can temporarily capture the display underneath the overlay so it can be blurred locally.
 
 That image:
 
@@ -297,17 +347,11 @@ That image:
 - does not leave the computer
 - is discarded when the break closes
 
-If you do not want the display captured for this effect, set:
-
-```text
-Overlay appearance → Solid
-```
+If you do not want the display captured for this visual effect, use the solid overlay presentation.
 
 ---
 
 # Download and installation
-
-## Recommended download
 
 | File | Purpose |
 |---|---|
@@ -370,8 +414,6 @@ powershell -ExecutionPolicy Bypass -File .\scripts\verify-change.ps1
 powershell -ExecutionPolicy Bypass -File .\scripts\build-installer.ps1
 ```
 
-CI builds the complete solution with warnings treated as errors and runs both core and application test suites on Windows.
-
 ---
 
 # Repository structure
@@ -389,20 +431,16 @@ CI builds the complete solution with warnings treated as errors and runs both co
 
 ---
 
-# Contributing
-
-Contributions are welcome.
+# Contributing and security
 
 Before opening a pull request, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-For security issues, follow [SECURITY.md](SECURITY.md) rather than opening a public vulnerability report.
+For security issues, follow [SECURITY.md](SECURITY.md) instead of opening a public vulnerability report.
 
-Additional project documents:
-
-- [CHANGELOG.md](CHANGELOG.md) — release history
-- [SECURITY.md](SECURITY.md) — security policy
-- [CONTRIBUTING.md](CONTRIBUTING.md) — contribution guidelines
-- [TRADEMARKS.md](TRADEMARKS.md) — use of the Awayra name and branding
+- [CHANGELOG.md](CHANGELOG.md) - release history
+- [SECURITY.md](SECURITY.md) - security policy
+- [CONTRIBUTING.md](CONTRIBUTING.md) - contribution guidelines
+- [TRADEMARKS.md](TRADEMARKS.md) - use of the Awayra name and branding
 
 ---
 
