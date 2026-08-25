@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Awayra animated hero banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111b"/>
+      <stop offset="0.55" stop-color="#0d1722"/>
+      <stop offset="1" stop-color="#101c28"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#55c7f3" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#55c7f3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowT" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#54dcc3" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#54dcc3" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="tiny" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55c7f3"/>
+      <stop offset="1" stop-color="#54dcc3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="29" fill="none" stroke="#26394d"/>
+
+  <circle cx="170" cy="110" r="155" fill="url(#glowC)" filter="url(#soft)">
+    <animate attributeName="cx" values="150;235;150" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="105;145;105" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1040" cy="295" r="190" fill="url(#glowT)" filter="url(#soft)">
+    <animate attributeName="cx" values="1030;950;1030" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <g transform="translate(74 56)">
+    <circle cx="44" cy="44" r="42" fill="#101d29" stroke="#55c7f3" stroke-width="3"/>
+    <circle cx="44" cy="44" r="31" fill="none" stroke="#55c7f3" stroke-width="1.5" opacity=".45">
+      <animate attributeName="r" values="28;35;28" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".2;.7;.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="44" y="57" text-anchor="middle" fill="#f5f7fb" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700">A</text>
+  </g>
+
+  <text x="185" y="95" fill="#f5f7fb" font-family="Segoe UI,Arial,sans-serif" font-size="54" font-weight="700">Awayra</text>
+  <text x="188" y="133" fill="#9fb2c5" font-family="Segoe UI,Arial,sans-serif" font-size="21">A calm, privacy-first break reminder for Windows</text>
+
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="188" y="164" width="188" height="54" rx="15" fill="#142230" stroke="#2d4256"/>
+    <text x="210" y="188" fill="#55c7f3" font-size="17" font-weight="700">20 min</text>
+    <text x="210" y="207" fill="#a8b8c8" font-size="14">Eye Reset</text>
+
+    <rect x="392" y="164" width="188" height="54" rx="15" fill="#142230" stroke="#2d4256"/>
+    <text x="414" y="188" fill="#54dcc3" font-size="17" font-weight="700">45 min</text>
+    <text x="414" y="207" fill="#a8b8c8" font-size="14">Move Break</text>
+
+    <rect x="596" y="164" width="188" height="54" rx="15" fill="#142230" stroke="#2d4256"/>
+    <text x="618" y="188" fill="#55c7f3" font-size="17" font-weight="700">100% local</text>
+    <text x="618" y="207" fill="#a8b8c8" font-size="14">No telemetry</text>
+  </g>
+
+  <g transform="translate(872 69)">
+    <circle cx="112" cy="112" r="83" fill="#0d1722" stroke="#2e455a" stroke-width="2"/>
+    <circle cx="112" cy="112" r="72" fill="none" stroke="url(#stroke)" stroke-width="4" stroke-linecap="round" stroke-dasharray="290 170">
+      <animateTransform attributeName="transform" type="rotate" from="0 112 112" to="360 112 112" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="112" cy="112" r="55" fill="#111f2c" stroke="#33495e"/>
+    <path d="M73 112 C88 86 136 86 151 112 C136 138 88 138 73 112 Z" fill="#ecf6fc"/>
+    <circle cx="112" cy="112" r="17" fill="#55c7f3"/>
+    <circle cx="112" cy="112" r="8" fill="#0b1721"/>
+    <circle cx="106" cy="106" r="4" fill="#ffffff" opacity=".9"/>
+    <circle cx="112" cy="112" r="91" fill="none" stroke="#55c7f3" stroke-width="2" opacity=".2">
+      <animate attributeName="r" values="86;100;86" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".12;.45;.12" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#a8b8c8">
+    <text x="188" y="270">Look away.</text>
+    <text x="292" y="270">Blink.</text>
+    <text x="354" y="270">Stand up.</text>
+    <text x="451" y="270">Move.</text>
+    <text x="511" y="270">Stretch.</text>
+    <text x="585" y="270" fill="#f5f7fb" font-weight="600">Then continue.</text>
+  </g>
+
+  <rect x="188" y="302" width="596" height="5" rx="2.5" fill="#26394b"/>
+  <rect x="188" y="302" width="180" height="5" rx="2.5" fill="url(#stroke)">
+    <animate attributeName="x" values="188;604;188" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="90;180;90" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="1120" cy="42" r="4" fill="#55c7f3" filter="url(#tiny)">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
