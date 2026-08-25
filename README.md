@@ -1,426 +1,423 @@
 <div align="center">
 
-# ❤️ Awayra
+# Awayra
 
-## Your health matters.
+### A calm, privacy-first break reminder for Windows
 
-**You can replace a laptop. You can rebuild a business. You can earn money again.  
-But your health deserves your attention every single day.**
+**Eye breaks. Movement reminders. Guided exercises. No account. No telemetry. No cloud dependency.**
 
-Awayra is a free, open-source break reminder for Windows designed to help people who spend long hours in front of a screen. 
-Build healthier work habits.
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows11&logoColor=white)](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest)
+[![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![Version](https://img.shields.io/badge/version-1.3.2-4C8BF5)](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest)
+[![License](https://img.shields.io/badge/license-GPL--3.0--only-blue)](LICENSE)
+[![Privacy](https://img.shields.io/badge/privacy-local--first-2ea44f)](#privacy)
 
-It reminds you to rest your eyes, move your body, stretch, blink, stand up, and step away from the screen before hours of focused work quietly turn into hours of uninterrupted sitting.
+### [Download Awayra for Windows](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest/download/Awayra-Setup-x64.exe)
 
-### ❤️ Built with care for healthier lives around the world.
-
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows11&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)
-![License](https://img.shields.io/badge/License-GPL--3.0--only-blue)
-![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-2ea44f)
-![Free](https://img.shields.io/badge/Price-Free-brightgreen)
-
-### [⬇️ Download Awayra for Windows](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest/download/Awayra-Setup-x64.exe)
-
-[Release notes](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest) · [Report a bug](https://github.com/AWAYRA/AWAYRA-WPF/issues)
+[Latest release](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/AWAYRA/AWAYRA-WPF/issues)
 
 </div>
 
 ---
 
-# Why Awayra?
+## Overview
 
-Most of us do not intentionally decide to sit in front of a screen for hours without moving.
+Awayra is a free and open-source Windows application for people who spend long periods working at a computer.
 
-It simply happens.
+It runs quietly in the background and reminds you to:
 
-You start working.
-
-You answer one more email.
-
-You fix one more bug.
-
-You finish one more task.
-
-And suddenly hours have passed.
-
-Your eyes have been staring at the same distance.
-
-Your shoulders have barely moved.
-
-You have been sitting in the same position far longer than you realized.
-
-**Awayra exists to interrupt that pattern.**
-
-Not by distracting you constantly.
-
-Not by tracking you.
-
-Not by sending your data somewhere.
-
-Just by giving you a small reminder at the right moment:
-
-> 👀 Look away.  
-> 👁️ Blink.  
-> 🧍 Stand up.  
-> 🚶 Move.  
-> 🧘 Stretch.  
-> ❤️ Take care of yourself.
-
-A few seconds away from the screen can be easy to forget.
-
-Awayra helps you remember.
-
----
-
-# ❤️ Health comes before productivity
-
-Productivity matters.
-
-Deadlines matter.
-
-Your work matters.
-
-But none of them should require ignoring your body for hours at a time.
-
-A successful career, a growing company, money, technology and achievements have far less value when your health is constantly being neglected.
-
-Awayra was created around a simple principle:
-
-## **Your computer should help remind you to take care of the person using it.**
-
-We cannot promise that a reminder app will prevent medical problems.
-
-What Awayra can do is help you build a healthier routine around screen use by making regular eye breaks and movement harder to forget.
-
----
-
-# 👀 Take care of your eyes
-
-Long periods of concentrated screen use can make it easy to forget to blink regularly or look into the distance.
-
-Awayra includes a dedicated **Eye Reset** reminder inspired by the commonly recommended **20-20-20 habit**.
-
-By default, every 20 minutes Awayra gives you a short 20-second break.
-
-During the break, a guided animation encourages you to:
-
+- rest your eyes
 - look away from the screen
-- shift your focus into the distance
-- relax your eyes
 - blink naturally
-- briefly disconnect from close-up screen focus
-
-The default guided exercise includes **10 counted blinks over 20 seconds**.
-
-It is deliberately simple.
-
-The goal is not another complicated wellness routine.
-
-The goal is to make taking a short eye break something you actually remember to do.
-
----
-
-# 🧍 Your body needs breaks too
-
-Humans were not designed to remain almost motionless in front of a monitor all day.
-
-Awayra's **Move Break** reminds you to periodically leave your working position and move.
-
-The guided routine can encourage you to:
-
 - stand up
-- walk for a moment
-- stretch your arms
-- move your shoulders
-- stretch your upper body
-- perform simple squats
-- briefly get away from your desk
+- move and stretch
+- avoid long uninterrupted periods of sitting
 
-The goal is not exercise performance.
+Awayra is deliberately local-first. It does not require an account, does not depend on a cloud service, and does not send usage telemetry.
 
-The goal is simple:
+The application provides two independent reminder systems:
 
-## **Do not let hours of sitting pass without noticing.**
+| Reminder | Default interval | Default duration | Purpose |
+|---|---:|---:|---|
+| **Eye Reset** | 20 minutes | 20 seconds | Short visual reset with distance focus and counted blinking |
+| **Move Break** | 45 minutes | 60 seconds | Stand, move, stretch and briefly leave the desk |
 
----
-
-# ✨ Designed to help, not annoy
-
-A break reminder is useless if you disable it after two days.
-
-Awayra is designed to remain calm and unobtrusive during normal work.
-
-When it is time for a break, it provides a clear fullscreen reminder with simple controls.
-
-You remain in control.
-
-You can:
-
-- complete the break
-- pause it
-- snooze it
-- skip it
-- mute individual reminders
-- change schedules
-- change durations
-- disable guided animations
-- enable Reduced Motion
-
-Awayra encourages healthier habits without trying to control how you work.
+Both schedules can be customized independently.
 
 ---
 
-# 🎯 Two independent reminder systems
+# Product tour
 
-Awayra includes two separate schedules.
+The screenshots below show the current Awayra desktop experience.
 
-| Reminder | Default interval | Default duration |
-|---|---:|---:|
-| 👀 Eye Reset | 20 minutes | 20 seconds |
-| 🧍 Move Break | 45 minutes | 60 seconds |
+## 1. System tray
 
-Every interval and duration can be customized.
+<p align="center">
+  <img src="docs/screenshots/awayra-system-tray.png" alt="Awayra system tray icon" />
+</p>
 
-You can adapt Awayra to your own work style instead of adapting your work to the application.
+Awayra is designed to remain available without occupying the taskbar during normal use.
 
----
+The system tray integration provides persistent background access while keeping the main dashboard out of the way. Depending on your Windows configuration, Awayra can start minimized and continue running from the notification area until a reminder is due.
 
-# 🌿 Guided break experiences
+Key behavior:
 
-A break should feel like a break.
-
-Awayra does more than display a number counting down.
-
-### 👁️ Eye Reset
-
-A calm visual exercise guides your focus while ten complete blinks are counted on screen.
-
-### 🚶 Move Break
-
-A guided character demonstrates a short sequence of standing, walking and stretching movements.
-
-If you prefer something simpler, guided animations can be disabled completely.
-
-Awayra also includes **Reduced Motion** mode for users who prefer static guidance instead of animated movement.
+- runs quietly in the Windows notification area
+- keeps reminder timers active while the dashboard is closed
+- supports launching with Windows
+- supports starting minimized
+- supports closing the dashboard back to the tray instead of exiting the application
 
 ---
 
-# 🔔 Calm sounds, not alarms
+## 2. Main dashboard
 
-A health reminder should not scare you.
+<p align="center">
+  <img src="docs/screenshots/awayra-dashboard.png" alt="Awayra main dashboard" width="680" />
+</p>
 
-Awayra includes six locally generated reminder sounds.
+The dashboard gives a direct view of both reminder systems without requiring configuration screens.
 
-Nothing is downloaded from the internet.
+Each reminder card shows its current state and countdown. Eye Reset and Move Break can be enabled, disabled or muted independently. You can also trigger either break immediately when you want to step away before the scheduled timer expires.
 
-| Sound | Style |
+The dashboard also displays daily activity statistics, including completed eye resets, movement breaks, skipped reminders and snoozed reminders.
+
+Main dashboard controls include:
+
+- live countdown for Eye Reset
+- live countdown for Move Break
+- independent reminder on/off controls
+- independent sound controls
+- **Eye Reset Now** manual trigger
+- **Move Break Now** manual trigger
+- pause/resume control
+- direct access to Settings
+- daily reminder statistics
+
+The goal is to keep the primary state of the application visible in one compact window.
+
+---
+
+## 3. Settings
+
+<p align="center">
+  <img src="docs/screenshots/awayra-settings.png" alt="Awayra settings window" width="1100" />
+</p>
+
+The Settings window groups the main behavior into four practical areas: sound and exercise, reminder timing, schedule behavior, and Windows/appearance options.
+
+### Break sound and exercise
+
+Awayra includes six locally generated reminder sounds:
+
+| Sound | Character |
 |---|---|
-| Soft bell | Short gentle alert |
-| Gentle chime | Light notification |
-| Calm drop | Soft minimal tone |
-| Calm piano | Four-note piano phrase |
-| Morning dew | Gentle rising five-note melody |
+| Soft bell | Short, gentle alert |
+| Gentle chime | Light notification tone |
+| Calm drop | Minimal soft tone |
+| Calm piano | Short piano phrase |
+| Morning dew | Gentle rising melody |
 | Still water | Slower, deeper calming melody |
 
-The softer melodies fade in gradually instead of suddenly starting at full volume.
+You can configure:
 
-Volume and repeat behavior are fully configurable.
+- reminder sound
+- volume
+- repeat interval
+- sound preview
+- guided exercise animation
+
+No sound asset needs to be downloaded at runtime.
+
+### Reminder timers
+
+Eye Reset and Move Break are configured independently.
+
+For each reminder you can control:
+
+- reminder enabled/disabled state
+- sound enabled/disabled state
+- interval
+- break duration
+
+This allows Awayra to support anything from frequent micro-breaks to longer movement intervals.
+
+### Behavior and schedule
+
+Awayra can be adapted to different work patterns with:
+
+- optional Skip action
+- optional Snooze action
+- configurable snooze duration
+- idle reset behavior
+- configurable idle threshold
+- optional work-hours restriction
+- configurable start and end of the workday
+
+When work hours are enabled, scheduled reminders can wait until the active work window resumes instead of appearing at inappropriate times.
+
+### Appearance and Windows behavior
+
+The break overlay can be adjusted from more solid to more transparent presentation.
+
+Additional options include:
+
+- overlay appearance
+- Reduced Motion
+- run at Windows startup
+- start minimized
+- close dashboard to tray
+
+Reduced Motion keeps the break guidance available without relying on animated movement.
 
 ---
 
-# 🖥️ Built for real Windows workflows
+## 4. Move Break
 
-Awayra supports the situations that happen during normal computer use:
+<p align="center">
+  <img src="docs/screenshots/awayra-move-break.png" alt="Awayra Move Break overlay" width="620" />
+</p>
+
+Move Break is intended to interrupt long periods of continuous sitting.
+
+The overlay presents a short guided movement sequence with a large countdown and a simple instruction for the current stage. The break can encourage actions such as standing up, walking briefly, resetting posture, moving the shoulders and stretching away from the desk.
+
+During a Move Break you can:
+
+- keep reminder sound on or mute the current break
+- skip the break when Skip is enabled
+- snooze the break when Snooze is enabled
+- mark the break complete
+
+The interaction remains intentionally limited so the break screen does not become another task-management interface.
+
+---
+
+## 5. Eye Reset
+
+<p align="center">
+  <img src="docs/screenshots/awayra-eye-reset.png" alt="Awayra Eye Reset overlay" width="620" />
+</p>
+
+Eye Reset provides a short visual interruption to prolonged close-up screen focus.
+
+The default experience is inspired by the commonly used 20-20-20 screen-break habit. Awayra's default configuration schedules a 20-second Eye Reset every 20 minutes.
+
+The guided screen encourages you to look away, focus farther into the distance, relax your face and blink naturally. The default guided sequence counts ten blinks during the break.
+
+The overlay provides:
+
+- a large remaining-time indicator
+- visual eye guidance
+- blink counter
+- simple distance-focus instructions
+- current-break sound control
+- optional Skip
+- optional Snooze
+- manual Complete action
+
+Guided animation can be disabled entirely, and Reduced Motion is available for users who prefer static guidance.
+
+---
+
+# Core features
+
+## Independent reminder engines
+
+Eye Reset and Move Break maintain their own interval, duration, enabled state and sound preference.
+
+You can use either reminder independently or run both together.
+
+## Manual breaks
+
+You do not need to wait for a timer. Both break types can be started directly from the dashboard.
+
+## Daily statistics
+
+Awayra records local daily counts for completed Eye Resets, completed Move Breaks, skipped reminders and snoozed reminders.
+
+## Idle-aware scheduling
+
+Awayra can reset reminder timing after the computer has been idle for a configured period. This prevents a reminder from appearing immediately after you return from a genuine break away from the computer.
+
+## Work hours
+
+Optional work hours let you restrict scheduled reminders to a defined time window.
+
+## Multi-monitor and Windows lifecycle support
+
+Awayra is designed for normal desktop conditions including:
 
 - Windows 10 and Windows 11
-- multiple monitors
+- multiple displays
 - per-monitor DPI
-- monitor sleep and wake
-- lock and unlock
-- suspend and resume
 - display configuration changes
+- monitor sleep and wake
+- Windows lock and unlock
+- suspend and resume
 - Windows startup
-- start minimized
 - system tray operation
-- idle detection
-- optional working-hour restrictions
-- daily break statistics
 
-It is designed to stay out of your way until you actually need it.
+## Calm notification sounds
+
+The included sounds are stored locally and are designed to function as gentle reminders rather than alarm-style interruptions.
 
 ---
 
-# 🔒 Your privacy stays on your computer
+# Privacy
 
-This matters to us.
+Awayra is built to work locally.
 
-## Awayra does not need your personal data.
+It does **not** require:
 
-There is:
+- an account
+- advertising
+- telemetry
+- analytics tracking
+- a cloud profile
+- browsing-history access
+- application-usage tracking
+- screenshot uploading
 
-- ❌ no account
-- ❌ no advertising
-- ❌ no telemetry
-- ❌ no analytics tracking
-- ❌ no cloud account
-- ❌ no browsing-history collection
-- ❌ no application-usage tracking
-- ❌ no screenshot uploading
+Settings, statistics and logs remain under:
 
-Awayra works offline.
+```text
+%LocalAppData%\Awayra\
+```
 
-Your settings, statistics and logs stay locally under:
+## Break-overlay background capture
 
-`%LocalAppData%\Awayra\`
-
-### What about the blurred background?
-
-When a break begins, Awayra can temporarily capture the display under the break overlay and blur it to create a frosted-glass effect.
+When a break overlay uses the blurred/frosted background effect, Awayra can temporarily capture the display underneath the overlay so it can be blurred locally.
 
 That image:
 
 - exists only in memory
-- is never written to disk
-- is never uploaded
-- never leaves your computer
+- is not written to disk
+- is not uploaded
+- does not leave the computer
 - is discarded when the break closes
 
-If you do not want the screen captured at all, change:
+If you do not want the display captured for this effect, set:
 
-**Overlay appearance → Solid**
-
----
-
-# 💚 Free and open source
-
-Awayra is free.
-
-No subscription.
-
-No premium health features hidden behind a payment screen.
-
-No account required.
-
-The source code is available publicly so developers can inspect how the application works.
-
-Awayra is licensed under **GPL-3.0-only**.
+```text
+Overlay appearance → Solid
+```
 
 ---
 
-# ⬇️ Download
+# Download and installation
+
+## Recommended download
 
 | File | Purpose |
 |---|---|
 | [**Awayra-Setup-x64.exe**](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest/download/Awayra-Setup-x64.exe) | Latest Windows x64 installer |
-| [Awayra-Setup-x64.sha256.txt](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest/download/Awayra-Setup-x64.sha256.txt) | SHA-256 verification |
-| [GitHub Releases](https://github.com/AWAYRA/AWAYRA-WPF/releases) | Previous versions and release notes |
+| [Awayra-Setup-x64.sha256.txt](https://github.com/AWAYRA/AWAYRA-WPF/releases/latest/download/Awayra-Setup-x64.sha256.txt) | SHA-256 checksum |
+| [GitHub Releases](https://github.com/AWAYRA/AWAYRA-WPF/releases) | Release history and previous versions |
 
-The installer already includes the required .NET runtime.
-
-Official Awayra executables are distributed only through this repository's GitHub Releases.
-
-Unsigned builds may trigger a Windows SmartScreen warning. You can verify the published SHA-256 checksum before installation.
-
----
-
-# Installation
+The installer includes the required .NET runtime.
 
 Awayra installs per-user under:
 
-`%LocalAppData%\Programs\Awayra`
+```text
+%LocalAppData%\Programs\Awayra
+```
 
-Administrator access is not required.
+Administrator privileges are not required for normal installation.
 
-When upgrading, Awayra preserves your settings, reminder schedules and statistics by default.
+Settings, schedules and statistics are preserved during normal upgrades unless data removal is explicitly requested.
 
-You can explicitly choose to remove existing data during installation or uninstallation.
+### Silent clean installation
 
-Silent clean installation:
-
-```bash
+```powershell
 Awayra-Setup-x64.exe /VERYSILENT /CLEANDATA=yes
 ```
 
-Silent uninstall with data removal:
+### Silent uninstall with local-data removal
 
-```bash
+```powershell
 unins000.exe /VERYSILENT /CLEANDATA=yes
 ```
 
+> Official Awayra Windows binaries are distributed through this repository's GitHub Releases. Unsigned builds can trigger a Windows SmartScreen warning. Use the published SHA-256 checksum when you want to verify the installer.
+
 ---
 
-# For developers
+# Development
 
-### Requirements
+## Requirements
 
 - Windows 10 or Windows 11 x64
 - .NET 10 SDK
 - PowerShell
-- Inno Setup 7
+- Inno Setup 7 for installer builds
 
-### Run locally
+## Run locally
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\dev.ps1
 ```
 
-### Build and test
+## Build and test
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\verify-change.ps1
 ```
 
-### Build installer
+## Build installer
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\build-installer.ps1
 ```
 
+CI builds the complete solution with warnings treated as errors and runs both core and application test suites on Windows.
+
 ---
 
 # Repository structure
 
-| Project | Responsibility |
+| Path | Responsibility |
 |---|---|
 | `src/Awayra.Core` | Scheduling, settings, validation, statistics and domain logic |
 | `src/Awayra.App` | WPF UI, tray integration, overlays, persistence, sounds, diagnostics and Windows integration |
 | `tests/Awayra.Core.Tests` | Platform-neutral domain tests |
 | `tests/Awayra.App.Tests` | WPF application and service tests |
 | `tests/Awayra.UiTests` | Windows UI automation tests |
+| `installer` | Inno Setup installer configuration |
+| `scripts` | Local development, verification and release helper scripts |
+| `docs/screenshots` | README product screenshots |
 
 ---
 
-# Contributing and security
+# Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing.
+Contributions are welcome.
 
-Security reports should follow [SECURITY.md](SECURITY.md).
+Before opening a pull request, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Release history is available in [CHANGELOG.md](CHANGELOG.md).
+For security issues, follow [SECURITY.md](SECURITY.md) rather than opening a public vulnerability report.
 
-Use of the Awayra name and logo is covered by [TRADEMARKS.md](TRADEMARKS.md).
+Additional project documents:
+
+- [CHANGELOG.md](CHANGELOG.md) — release history
+- [SECURITY.md](SECURITY.md) — security policy
+- [CONTRIBUTING.md](CONTRIBUTING.md) — contribution guidelines
+- [TRADEMARKS.md](TRADEMARKS.md) — use of the Awayra name and branding
 
 ---
 
-<div align="center">
-
-# ❤️ Your health matters.
-
-Software should not only help us work more.
-
-Sometimes it should remind us when it is time to stop working for a moment.
-
-**Look away. Move. Stretch. Blink. Breathe.**
-
-Then continue.
-
-### Made with ❤️ for healthier screen habits around the world.
-
-Copyright © 2026 Farzin Alavi.
+# License
 
 Awayra is licensed under **GPL-3.0-only**.
 
-</div>
+See [LICENSE](LICENSE) for the complete license text.
 
-> **Medical notice:** Awayra is a wellness and break-reminder application, not a medical device and not a substitute for professional medical advice. Persistent eye pain, severe headaches, double vision, numbness or ongoing musculoskeletal pain should be evaluated by a qualified healthcare professional.
+Copyright © 2026 Farzin Alavi.
+
+---
+
+## Medical notice
+
+Awayra is a wellness and break-reminder application. It is not a medical device and is not a substitute for professional medical advice, diagnosis or treatment.
+
+Persistent eye pain, severe headaches, double vision, numbness or ongoing musculoskeletal pain should be evaluated by a qualified healthcare professional.
