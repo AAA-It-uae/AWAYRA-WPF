@@ -67,7 +67,7 @@ Awayra is built to live in the Windows notification area instead of occupying th
 ## 2. Main dashboard
 
 <p align="center">
-  <img src="docs/screenshots/awayra-dashboard.webp" alt="Awayra main dashboard" width="520" />
+  <img src="docs/screenshots/awayra-dashboard.png" alt="Awayra main dashboard" width="520" />
 </p>
 
 The dashboard is the operational overview of Awayra. It shows both reminder engines, today's activity and the controls needed during normal use.
@@ -112,7 +112,7 @@ Awayra records local daily counts for:
 ## 3. Settings
 
 <p align="center">
-  <img src="docs/screenshots/awayra-settings.webp" alt="Awayra settings window" width="600" />
+  <img src="docs/screenshots/awayra-settings.png" alt="Awayra settings window" width="600" />
 </p>
 
 Settings is where Awayra's behavior is defined. The current window groups configuration into four practical areas: **Break sound and exercise**, **Reminder timers**, **Behavior and schedule**, and **Appearance and Windows**.
@@ -217,7 +217,7 @@ A solid presentation can also be used when you do not want the temporary blurred
 ## 4. Move Break
 
 <p align="center">
-  <img src="docs/screenshots/awayra-move-break.webp" alt="Awayra Move Break overlay" width="600" />
+  <img src="docs/screenshots/awayra-move-break.png" alt="Awayra Move Break overlay" width="600" />
 </p>
 
 Move Break interrupts long periods of continuous sitting with a focused fullscreen routine.
@@ -240,7 +240,7 @@ The guided routine can encourage standing, walking briefly, resetting posture, m
 ## 5. Eye Reset
 
 <p align="center">
-  <img src="docs/screenshots/awayra-eye-reset.webp" alt="Awayra Eye Reset overlay" width="600" />
+  <img src="docs/screenshots/awayra-eye-reset.png" alt="Awayra Eye Reset overlay" width="600" />
 </p>
 
 Eye Reset is a short interruption to prolonged close-up screen focus. The standard Awayra schedule uses a 20-second Eye Reset every 20 minutes.
